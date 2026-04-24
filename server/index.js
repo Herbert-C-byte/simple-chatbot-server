@@ -25,6 +25,7 @@ async function callAI(messages) {
   })
 
   const data = await response.json()
+  console.log(JSON.stringify(data, null, 2))
   return data.choices[0].message.content
 }
 
